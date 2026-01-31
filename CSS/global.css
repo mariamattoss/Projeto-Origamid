@@ -2,6 +2,7 @@ body {
    font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
     margin: 0;
     color: #141414;
+
 }
 
 h1, h2, h3, p {
@@ -17,4 +18,20 @@ ul {
 img {
     max-width: 100%; /* deixa a imagem responsiva */
     display: block; 
+}
+
+.subtitulo {
+    font-size: 8rem;
+    line-height: 1; /* altura da linha igual o tamanho da fonte */
+    text-transform: uppercase; /* deixa as letras maiúsculas */
+    word-break: break-all; /* quebra a palavra se for muito grande */
+    max-width: 4ch; /* limita a largura máxima para 4 caracteres */
+}
+
+@media (max-width: 800px) {
+    .subtitulo {
+        font-size: 3rem;
+        text-transform: capitalize;
+        max-width: initial !important; /* remove o max-width aplicado inline */
+    }
 }

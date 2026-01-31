@@ -1,0 +1,81 @@
+
+.contato-form {
+    background: #141414;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif; 
+}
+
+/* Estilo dos Labels */
+.contato-form label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: white;
+    text-transform: uppercase; 
+    letter-spacing: 0.05em;
+}
+
+/* Estilo dos Inputs e Textarea */
+.contato-form input, 
+.contato-form textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de Foco (Acompanhando o azul do detalhe lateral da imagem) */
+.contato-form input:focus, 
+.contato-form textarea:focus {
+    outline: none;
+    border-color: #4b44fb; /* Tom de azul/roxo das suas tags */
+    box-shadow: 0 0 8px rgba(75, 68, 251, 0.1);
+}
+
+/* Ajuste específico para o campo de mensagem */
+.contato-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Quando o campo tiver a classe erro, a borda fica vermelha */
+.contato-form input.erro, 
+.contato-form textarea.erro {
+    border-color: #ff4d4d;
+    background-color: #fff5f5;
+}
+
+/* Estilização do Botão (Seguindo o peso visual do site) */
+.contato-form button {
+    background-color: white;
+    color: #141414;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start; /* Alinha à esquerda como o resto do texto */
+}
+
+.contato-form button:hover {
+    background-color: #333333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .contato-form button {
+        width: 100%;
+    }
+}

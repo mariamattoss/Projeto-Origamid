@@ -1,29 +1,207 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maria - Portfolio</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
-<header class="header">
-    <img src="#" alt="logo Maria">
-    <nav>
-        <ul class="header-menu">
-            <li><a href="#experiencia">Experiência</a></li>
-            <li><a href="#formacao">Formação</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-</header>
 
-<main class="introducao">
-    <img src="#" alt="foto de perfil">
-    <div>
-        <h1>Desenvolvedora<br>Front End e <br>UI/UX Designer</h1>
-        <p>Localizada em Belém do Pará</p>
-    </div>
-</main>
+<body>
+    <header class="header">
+        <h1 class="header-logo">Maria Mattos</h1>
+        <!--<img src="#" alt="logo Maria">-->
+        <nav>
+            <ul class="header-menu">
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="introducao">
+        <img src="ia.avif" alt="foto de perfil" width="360" height="380">
+        <div>
+            <h1>Desenvolvedora<br>Front End e <br>UI/UX Designer</h1>
+            <p>Localizada em Belém do Pará</p>
+        </div>
+    </main>
+
+    <section class="experiencia" id="experiencia" aria-label="experiencia">
+        <h2 class="subtitulo">Experiencia</h2>
+        <div>
+            <p class="experiencia-texto">Desenvolvo pequenos projetos com <strong>HTML</strong>,<strong>CSS</strong> e
+                <strong>JavaScript</strong>
+                com
+                foco em design responsivo e acessibilidade.
+            </p>
+
+            <div class="empresa">
+                <span class="cargo-ano">2025</span>
+                <h3 class="empresa-titulo">Paz no Vale</h3>
+                <span class="empresa-titulo">Estagiaria de TI</span>
+                <p class="empresa-texto">Desenvolvimento de projetos front-end
+                    para a empresa Paz no Vale, focando em design responsivo e
+                    acessibilidade.
+                </p>
+                <ul class="empresa-habilidade">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="empresa">
+            <span class="cargo-ano">2025</span>
+            <h3 class="empresa-titulo">Paz no Vale</h3>
+            <span class="empresa-titulo">Estagiaria de TI</span>
+            <p class="empresa-texto">Desenvolvimento de projetos front-end
+                para a empresa Paz no Vale, focando em design responsivo e
+                acessibilidade.
+            </p>
+            <ul class="empresa-habilidade">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        </div>
+
+        <div class="empresa">
+            <span class="cargo-ano">2025</span>
+            <h3 class="empresa-titulo">Paz no Vale</h3>
+            <span class="empresa-titulo">Estagiaria de TI</span>
+            <p class="empresa-texto">Desenvolvimento de projetos front-end
+                para a empresa Paz no Vale, focando em design responsivo e
+                acessibilidade.
+            </p>
+            <ul class="empresa-habilidade">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        </div>
+
+    </section>
+
+    <section class="formacao" id="formacao" aria-label="Formação">
+        <div class="formacao-container">
+            <h2 class="subtitulo">Formação</h2>
+
+            <div>
+                <p class="formacao-texto">
+                    Minha formação é em Analise e Desenvolvimento de Sistemas, e cursos complementares </p>
+
+                <ul class="faculdade-lista">
+                    <li class="faculdade">
+                        <span class="faculdade-tipo">Tecnólogo</span>
+                        <h3 class="faculdade-curso">Analise e Desenvolvimento de Sistemas</h3>
+                        <span class="faculdade-instituicao">Estacio</span>
+                    </li>
+                    <li class="faculdade">
+                        <span class="faculdade-tipo">Tecnólogo</span>
+                        <h3 class="faculdade-curso">Redes de Computadores</h3>
+                        <span class="faculdade-instituicao">Estacio</span>
+                    </li>
+                    <li class="faculdade">
+                        <span class="faculdade-tipo">Tecnólogo</span>
+                        <h3 class="faculdade-curso">Cibersegurança</h3>
+                        <span class="faculdade-instituicao">Estacio</span>
+                    </li>
+                </ul>
+
+                <div class="formacao-extra">
+                    <div class="cursos">
+                        <h3>Cursos Complementares</h3>
+                        <ul>
+                            <li>Curso de HTML e CSS - Origamid<span>40h</span></li>
+                            <li>Curso de JavaScript - Origamid<span>40h</span></li>
+                            <li>Curso de UI/UX Design - Origamid<span>56h</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="idiomas">
+                        <h3>Idiomas</h3>
+                        <ul>
+                            <li>Inglês <span>Básico</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <form class="contato-form" id="contato" aria-label="contato" method="">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Digite seu email">
+
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone" name="telefone" required placeholder="9190000-0000">
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" required placeholder="Digite sua mensagem"></textarea>
+
+        <button>Enviar</button>
+    </form>
+
+    <footer class="footer" id="contato">
+        <div class="footer-container">
+            <p class="footer-texto">Estou disponível para novos projetos e oportunidades de trabalho. Entre em contato
+                comigo!</p>
+            <ul class="footer-contato">
+                <li>09.mariamattos@gmail.com</li>
+                <li>+55 91 99999-9999</li>
+                <li>Belém, Pará, Brasil</li>
+            </ul>
+            <p class="footer-copy">© 2025 Maria Mattos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.contato-form').addEventListener('submit', function (event) {
+            // 1. Seleciona os campos para validar
+            const nome = document.getElementById('nome');
+            const email = document.getElementById('email');
+            const telefone = document.getElementById('telefone');
+            const mensagem = document.getElementById('mensagem');
+
+            // Cria uma lista com os dados para facilitar a verificação
+            const campos = [nome, email, telefone, mensagem];
+
+            let formularioValido = true;
+
+            // 2. Loop para verificar cada campo
+            campos.forEach(campo => {
+                // Remove a classe de erro caso ela já existisse de uma tentativa anterior
+                campo.classList.remove('erro');
+
+                // Verifica se o campo está vazio (o .trim remove espaços em branco inúteis)
+                if (campo.value.trim() === "") {
+
+                    campo.classList.add('erro');
+                    formularioValido = false;
+                }
+            });
+
+            // 3. Decisão final
+            if (!formularioValido) {
+                // Se algum campo estiver vazio, impede o formulário de ser enviado
+                event.preventDefault();
+                alert("Por favor, preencha todos os campos destacados em vermelho.");
+            } else {
+                // Se tudo estiver tudo OK, o formulário seguiria para o envio
+                console.log("Todos os campos preenchidos! Enviando...");
+            }
+        });
+    </script>
 </body>
+</body>
+
 </html>
